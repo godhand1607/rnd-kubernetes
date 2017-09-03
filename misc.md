@@ -1,4 +1,3 @@
----
 # Minikube Pipeline
 minikube start
 kubectl get pod|deployment|services
