@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: svc-webserver
+    labels:
+        run: svc-webserver
+spec:
+    type: NodePort
+    ports:
+    - port: 80
+      targetPort: webserver-port
+      protocol: TCP
+    selector:
+        app: webserver
